@@ -1,0 +1,18 @@
+#include<stdio.h> 
+int num1(int rev_num)  
+{  
+ int num2 = 0;  
+    while (rev_num > 0)  
+    {  
+        num2 = num2 * 10 + rev_num % 10;  
+        rev_num = rev_num / 10;  
+    }  
+    return num2;   
+}  
+int main()  
+{  
+ int num; 
+ printf("Enter No: "); 
+ scanf("%d",&num); 
+ printf("Reverse no. is %d",num1(num)); 
+}
